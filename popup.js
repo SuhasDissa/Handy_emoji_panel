@@ -35,7 +35,7 @@ function goFetch() {
 };
 
 function sorter() {
-  var input, filter, ul, i, txtValue,defaultStuff;
+  var input, filter, ul, i, txtValue, defaultStuff;
   input = document.getElementById("myInput");
   defaultStuff = document.getElementById("premade");
   filter = input.value.toUpperCase().replace(" ", "_");
