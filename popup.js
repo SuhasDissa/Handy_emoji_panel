@@ -1,8 +1,14 @@
+var fetched = false;
 document.addEventListener('DOMContentLoaded', function () {
-  goFetch()
+  document.getElementById('myInput').addEventListener('click', function () {
+    if (!fetched) {
+      goFetch();
+    }
+
+  });
   document.getElementById('myInput').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
-      sorter()
+      sorter()     
     }
 
   });
@@ -11,6 +17,9 @@ document.addEventListener('DOMContentLoaded', function () {
 var namelist = [];
 var urllist = [];
 function goFetch() {
+  loader = document.getElementById("loader");
+  defaultStuff = document.getElementById("premade");
+  loader.style.display = "block";
   const request_URL = "http://emoji.gg/api/";
   //const imageList = document.getElementById("new");
   //Start the fetching request with request_URL
@@ -31,21 +40,16 @@ function goFetch() {
         urllist.push(postObject.imgurl);
       });
     });
-  console.log(namelist);
+    defaultStuff.style.display = "none";
+    fetched = true;
 };
 
 function sorter() {
-  var input, filter, ul, i, txtValue, defaultStuff;
+  var input, filter, ul, i, txtValue;
   input = document.getElementById("myInput");
-  defaultStuff = document.getElementById("premade");
   filter = input.value.toUpperCase().replace(" ", "_");
   ul = document.getElementById("new");
   ul.innerHTML = '';
-
-  if (defaultStuff.style.display != "none") {
-    defaultStuff.style.display = "none";
-  }
-
   for (i = 0; i < namelist.length; i++) {
     txtValue = namelist[i];
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -54,4 +58,6 @@ function sorter() {
     } else {
     }
   }
+  loader = document.getElementById("loader");
+  loader.style.display = "none";
 }

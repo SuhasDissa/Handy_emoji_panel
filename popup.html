@@ -3,6 +3,12 @@
 
 <head>
   <style>
+    body {
+      min-width: 470px;
+      min-height: 300px;
+      background-color: #2f3136;
+    }
+
     table,
     th,
     td {
@@ -28,16 +34,51 @@
     }
 
     #myInput {
+      background-color: #202225;
+      color: white;
       width: 100%;
-      /* Full-width */
       font-size: 16px;
-      /* Increase font-size */
       padding: 12px 20px 12px 20px;
-      /* Add some padding */
-      border: 1px solid #ddd;
-      /* Add a grey border */
+      border: none;
+      border-radius: 8px;
       margin-bottom: 12px;
-      /* Add some space below the input */
+      margin-right: 20px;
+    }
+
+    #loader {
+      display: none;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+    }
+
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #00000000;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(83, 83, 83);
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -45,6 +86,7 @@
 <body>
   <input type="text" id="myInput" placeholder="Search for images..">
   <script src="popup.js"></script>
+  <img src="Sticker/{e3764da9-8e99-422f-8859-7214c960edef}.png" id="loader">
   <ul id="new"></ul>
   <ul id="premade">
     <li><img src="Sticker/{0ec51a65-4ac9-4997-ad9e-7b248dbcba25}.gif"></li>
