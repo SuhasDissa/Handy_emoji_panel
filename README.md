@@ -4,8 +4,8 @@
 
 Cool collection of emojis for discord or any other site
 
-![Demo](./Screenshot_1.png)
-![Demo](./Screenshot_2.png)
+![Demo](./images/Screenshot_1.png)
+![Demo](./images/Screenshot_2.png)
 ## Installation Instructions Google Chrome / Microsoft Edge
 
 - Download this repo as a ZIP file from GitHub.
