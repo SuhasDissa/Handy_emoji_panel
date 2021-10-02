@@ -47,13 +47,15 @@ function goFetch() {
 function sorter() {
   var input, filter, ul, i, txtValue;
   input = document.getElementById("myInput");
+  message = document.getElementById("message");
+  message.style.display = "block";
   filter = input.value.toUpperCase().replace(" ", "_");
   ul = document.getElementById("new");
   ul.innerHTML = '';
   for (i = 0; i < namelist.length; i++) {
     txtValue = namelist[i];
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      var image = '<li><img src="' + urllist[i] + '"></li>';
+      var image = '<li><a href="'+ urllist[i] +'"><img src="' + urllist[i] + '"></a></li>';
       ul.innerHTML += image;
     } else {
     }
