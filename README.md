@@ -2,8 +2,6 @@
 
 Cool collection of emojis for discord or any other site
 
-![Demo](./images/Screenshot_1.png)
-
 ## Installation Instructions Google Chrome / Microsoft Edge
 
 - Download this repo as a ZIP file from GitHub.
@@ -23,7 +21,10 @@ Click on the extension. It will open a menu then right click on any emoji and co
 
 Click on the extension. Use the search bar to search any emoji. It will load some emoji (if its available) then right click and copy emoji
 
-  
+## Screenshots
+
+![Demo](./images/Screenshot_1.png)
+
 ## Known Issues
 
 - You cant copy animated emojis. save them on your pc and use them.
