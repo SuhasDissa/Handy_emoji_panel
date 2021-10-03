@@ -19,6 +19,8 @@ Click on the extension. It will open a menu then right click on any emoji and co
 
 #### Fetch emojis from emoji.gg
 
+[![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
+
 Click on the extension. Use the search bar to search any emoji. It will load some emoji (if its available) then right click and copy emoji
 
 ## Screenshots
