@@ -1,6 +1,4 @@
-
-# Handy emoji panel
-
+<img src="images/Banner.png" width="100%">
 
 Cool collection of emojis for discord or any other site
 
